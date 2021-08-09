@@ -1,0 +1,28 @@
+<!-- ------------------------------- navbar -------------------------------- -->
+<div class="navbar">
+	<div class="logo"><a href="/">WoodCase</a></div>
+	<div class="links">
+		<ul>
+			<a href="/shop" class="hover">Shop</a>
+			<% collections.forEach(collection => { %>
+			<a href="/collections/<%= collection.title %>" class="hover"
+				><%= collection.title %></a
+			>
+
+			<% }) %>
+			<a href="/contactus" class="hover">ContactUs</a>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="icons">
+			<a href="/search"
+				><img class="search top" src="/images/icons/search.png" alt="cart"
+			/></a>
+		</div>
+		<div class="icons">
+			<a href="/checkout"
+				><img class="cart top" src="/images/icons/Cart.png" alt="cart"
+			/></a>
+		</div>
+	</div>
+</div>

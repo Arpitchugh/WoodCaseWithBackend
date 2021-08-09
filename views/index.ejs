@@ -1,0 +1,170 @@
+<%- include('./includes/nav') %> <%- include('./includes/hamnav') %>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>WoodCase</title>
+	<link rel="stylesheet" href="css/index.css" />
+
+	<!-- -------------------------------- fonts -------------------------------- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+		rel="stylesheet"
+	/>
+
+	<!-- ------------------------------- favicon ------------------------------- -->
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="/images/favicon/apple-touch-icon.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/images/favicon/favicon-32x32.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/images/favicon/favicon-16x16.png"
+	/>
+	<link rel="manifest" href="/images/favicon/site.webmanifest" />
+	<link
+		rel="mask-icon"
+		href="/images/favicon/safari-pinned-tab.svg"
+		color="#5bbad5"
+	/>
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+</head>
+<div class="bg-img"></div>
+
+<!-- ------------------------------- Hero Section -------------------------------- -->
+
+<section class="header">
+	<div class="header__text-box">
+		<h1 class="heading-primary">
+			<span class="heading-primary--main">WoodCase</span
+			><span class="heading-primary--sub">made with love in india</span>
+		</h1>
+	</div>
+</section>
+<a href="#" class="btn-primary btn-hero-position"
+	><span class="btn">EXPLORE</span></a
+>
+
+<!-- --------------------------- Artisian Section --------------------------- -->
+
+<section class="artisian">
+	<div class="artisian__content">
+		<h2 class="artisian__heading">Artisian</h2>
+		<h4 class="artisian__subheading">New Collection</h4>
+		<p class="artisian__para">
+			The collection's iconic tables are all entirely made of certified,
+			solid reclaimed teak wood of high quality, sourced from century-old
+			houses from remote villages in East Java. Standout design features
+			include the distinctive joineries on the legs, which are inspired by a
+			traditional Javanese house construction system called ‘Purus’, in which
+			wooden joints are carefully fitted together in an artisanal way.
+		</p>
+		<div class="btn-explore">
+			<a href="/collections/artisian" class="btn-primary artisian__btn"
+				><span class="btn">EXPLORE</span></a
+			>
+		</div>
+	</div>
+	<img
+		class="artisian__img"
+		src="/images/Compressed/artisian_page/Artisan__link_image_croped.png"
+	/>
+</section>
+
+<!-- ------------------------- New Arrival section -------------------------- -->
+
+<div class="newarrival__heading">NEW ARRIVALS</div>
+
+<section id="section_items">
+	<div class="img-container">
+		<% types.forEach(type => { %>
+		<div class="newarrival">
+			<a href="/shop">
+				<img
+					class="newarrival__horizontal"
+					src="/<%= type.imagePath %>"
+					alt="<%= type.imageTitle %>"
+				/>
+				<a
+					href="/shop"
+					class="btn-tertiary btn-arrival btn__tertiary-transition"
+					data-sm-link-text="SHOP NOW"
+					><span><%= type.title %></span></a
+				>
+			</a>
+		</div>
+		<% }) %>
+	</div>
+</section>
+
+<!-- -------------------------- caterpillar section -------------------------- -->
+<section class="section-caterpillar">
+	<div class="caterpillar-button">
+		<a href="/caterpillar" class="btn-primary caterpillar__btn">
+			<span class="btn">EXPLORE</span>
+		</a>
+	</div>
+	<img
+		class="scribble-left"
+		src="/images/Scribbles/2.png"
+		alt="scribble-left"
+	/>
+	<h1 class="heading__caterpillar">CATERPILLAR</h1>
+	<img
+		class="scribble-right"
+		src="/images/Scribbles/1.png"
+		alt="scribble-right"
+	/>
+</section>
+<!-- -------------------------- shelfmate section -------------------------- -->
+<main>
+	<section class="Shelfmate">
+		<div class="Shelfmate__content">
+			<h2 class="Shelfmate__heading">SHELFMATE</h2>
+			<h4 class="Shelfmate__subheading">
+				With Shelfmate, We introduces a new and modern take on shelving
+				units, as well as a new style in wall decoration.
+			</h4>
+			<p class="Shelfmate__para">
+				A system of variously sized shelving units to dress up your wall.
+				Use the shelves alone or combined together: the composition
+				possibilities are endless. The shelves are handcrafted out of
+				high-quality reclaimed teak wood, supported by an iron frame, which
+				contributes to a more modern look that suits many different types of
+				interiors.
+			</p>
+			<div class="btn-explore">
+				<a href="./shelfmate.html" class="btn-primary Shelfmate__btn"
+					><span class="btn">EXPLORE</span></a
+				>
+			</div>
+		</div>
+
+		<video class="Shelfmate__page-video" autoplay muted loop>
+			<source
+				src="/images/Compressed/artisian_page/artisian video.mp4"
+				type="video/mp4"
+			/>
+		</video>
+	</section>
+</main>
+<!-- ----------------------------- main ending ----------------------------- -->
+
+<!-- --------------------------------- js ---------------------------------- -->
+
+<script src="/js/index.js"></script>
+
+<%- include('./includes/footer') %>

@@ -1,0 +1,32 @@
+.heading-primary {
+	color: #fff;
+	text-transform: uppercase;
+
+	backface-visibility: hidden;
+	margin-bottom: 6rem;
+
+	&--main {
+		display: block;
+		font-size: 5rem;
+		font-weight: 400;
+		letter-spacing: 2.5rem;
+		margin-bottom: 2rem;
+		animation: moveInLeft 1s ease-out;
+	}
+
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: 600;
+		letter-spacing: 0.5rem;
+		animation: moveInRight 1s ease-out;
+	}
+	.heading-tertiary {
+		font-size: 2rem;
+		font-family: '' Open Sans '';
+
+		@media screen and (max-width: 400px) {
+			font-size: 3rem;
+		}
+	}
+}

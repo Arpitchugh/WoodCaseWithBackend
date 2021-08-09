@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>New Arrivals</title>
+		<style>
+			img {
+				height: 10rem;
+				width: 10rem;
+			}
+		</style>
+	</head>
+	<body>
+		<% types.forEach(type => { %>
+		<h1><%= type.title %></h1>
+		<img src="/<%= type.imagePath %>" alt="<%= type.imageTitle %>" />
+
+		<form action="/admin/new-arrivals/delete-type" method="POST">
+			<%- include('../includes/csrfToken') %>
+			<input type="hidden" name="id" value="<%= type._id %>" />
+
+			<button type="submit">Delete Type</button>
+		</form>
+
+		<h4>products</h4>
+		<% type.products.forEach(product => { %>
+		<h1><%= product.title %></h1>
+		<p><%= product.description %></p>
+		<p>Rs <%= product.price %></p>
+
+		<img src="/<%= product.image1.path %>" alt="image1" />
+		<img src="/<%= product.image2.path %>" alt="image2" />
+
+		<form action="/admin/new-arrivals/delete-product" method="POST">
+			<%- include('../includes/csrfToken') %>
+			<input type="hidden" name="productId" value="<%= product._id %>" />
+			<input type="hidden" name="typeName" value="<%= type.title %>" />
+			<button type="submit">Delete Product</button>
+		</form>
+
+		<a
+			href="/admin/new-arrivals/update-product/<%= product._id %>?type=<%= type.title %>"
+			>Update Product</a
+		>
+		<% }) %>
+		<hr />
+		<% }) %>
+	</body>
+</html>

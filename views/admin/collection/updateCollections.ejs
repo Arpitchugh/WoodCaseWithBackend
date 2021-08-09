@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Update New Arrivals</title>
+	</head>
+	<body>
+		<form
+			action="/admin/collections/update-product/<%= productId %>?type=<%= type %>&_csrf=<%= csrfToken %>"
+			method="POST"
+			enctype="multipart/form-data"
+		>
+			<%- include('../includes/csrfToken') %>
+			<label for="title">Title</label>
+			<input
+				type="text"
+				id="title"
+				name="title"
+				value="<%= title %>"
+				required
+			/>
+
+			<label for="price">Price</label>
+			<input
+				type="number"
+				name="price"
+				id="price"
+				value="<%= price %>"
+				required
+			/>
+
+			<label for="description">description</label>
+			<input
+				type="text"
+				name="description"
+				value="<%= description %>"
+				id="description"
+			/>
+			<input type="file" name="image" multiple accept=".png, .jpg, .jpeg" />
+
+			<button type="submit">update</button>
+		</form>
+	</body>
+</html>

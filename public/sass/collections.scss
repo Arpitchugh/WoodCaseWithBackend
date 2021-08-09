@@ -1,0 +1,311 @@
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'layout/nav';
+@import 'layout/hamnav';
+@import 'layout/footer';
+@import 'components/btn';
+
+/* ------------------------------- HeroSection ------------------------------ */
+.bgimg-artisian {
+	position: absolute;
+	// background-image: url('/images/Compressed/artisian_page/Artisan__link_image_.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	filter: brightness(75%);
+
+	// @media screen and (max-width: 800px) {
+	// 	background-image: url(/images/Compressed/artisian_page/Artisan__link_image_croped.png);
+	// }
+}
+
+.hero {
+	height: 95vh;
+	&__main-heading {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+
+		font-size: 7rem;
+		font-weight: 400;
+		letter-spacing: 2.5rem;
+		margin-bottom: 2rem;
+		animation: moveInLeft 1s ease-out;
+	}
+
+	.hero__main-heading span {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__scribble {
+		position: absolute;
+		top: 44%;
+		left: 40%;
+		width: 27%;
+		z-index: 1;
+		animation: moveInBottom 1s ease-in-out;
+	}
+
+	&__btn {
+		position: absolute;
+		right: 10rem;
+		bottom: 15rem;
+		z-index: 1;
+
+		@media screen and (max-width: 400px) {
+			position: absolute;
+			left: 20rem;
+			bottom: 35rem;
+		}
+	}
+}
+/* -------------------------------- artisian ------------------------------- */
+
+.artisian {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid #f3efde;
+	height: 110vh;
+	overflow: hidden;
+	padding: 5rem;
+	position: relative;
+
+	@media screen and (max-width: 1500px) {
+		color: #f3efde;
+		display: block;
+		margin-top: -5rem;
+		height: 100vh;
+		padding: 0rem;
+	}
+
+	@media screen and (max-width: 1000px) {
+		height: 100vh;
+		padding: 0rem;
+	}
+
+	&__heading {
+		font-size: 5rem;
+		font-family: Open Sans;
+		margin: 0;
+		padding-top: 5rem;
+		padding-left: 20rem;
+
+		@media screen and (max-width: 1500px) {
+			font-size: 8rem;
+			position: absolute;
+			top: 15rem;
+			left: 3rem;
+		}
+
+		@media screen and (max-width: 1000px) {
+			font-size: 7rem;
+			padding-top: 8rem;
+			padding-left: 10rem;
+		}
+
+		@media screen and (max-width: 550px) {
+			font-size: 5rem !important;
+		}
+
+		@media screen and (max-width: 400px) {
+			font-size: 8rem;
+		}
+	}
+
+	&__subheading {
+		text-decoration: underline 2px;
+		font-size: 2rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-top: 0.5rem;
+		padding-left: 20rem;
+		width: 49rem;
+
+		@media screen and (max-width: 1500px) {
+			position: absolute;
+			top: 30rem;
+			left: 3rem;
+			font-size: 3rem;
+			text-decoration: underline 1px;
+			width: 70rem;
+		}
+
+		@media screen and (max-width: 1000px) {
+			font-size: 3rem;
+			top: 35rem;
+			left: -6rem;
+			text-decoration: underline 1px;
+			width: 70rem;
+		}
+		@media screen and (max-width: 450px) {
+			font-size: 2.5rem !important;
+		}
+	}
+
+	&__para {
+		font-size: 2.5rem;
+		margin-top: 0;
+		padding-top: 2rem;
+		padding-left: 20rem;
+		width: 49rem;
+		margin-bottom: 9rem;
+
+		@media screen and (max-width: 1500px) {
+			top: 55rem;
+			left: 3rem;
+			font-size: 4rem;
+			width: 90rem;
+			position: absolute;
+		}
+
+		@media screen and (max-width: 1000px) {
+			font-size: 4rem;
+			width: 90rem;
+			top: 55rem;
+			left: -6rem;
+		}
+
+		@media screen and (max-width: 450px) {
+			width: 70rem;
+			font-size: 2.8rem !important;
+		}
+
+		@media screen and (max-width: 400px) {
+			width: 70rem;
+			font-size: 3.4rem;
+		}
+	}
+
+	&__btn {
+		color: #2726264a;
+		left: 40%;
+
+		&:hover {
+			transition: all 0.3s;
+			border-color: #ffffff !important;
+		}
+
+		@media screen and (max-width: 1500px) {
+			border-color: #ffffff !important;
+			color: #f3efde;
+			top: 120rem;
+			left: 75rem;
+		}
+
+		@media screen and (max-width: 1000px) {
+			position: absolute;
+			left: 60rem;
+			//   bottom: 27rem;
+		}
+
+		@media screen and (max-width: 500px) {
+			position: absolute;
+			left: 5rem;
+			//   bottom: 35rem;
+			color: #f3efde;
+		}
+
+		@media screen and (max-width: 400px) {
+			position: absolute;
+			left: 15rem;
+			//   bottom: 35rem;
+			color: #f3efde;
+		}
+		@media screen and (max-height: 750px) {
+			position: absolute;
+			left: 15rem;
+			//   top: 95rem;
+			bottom: 8rem;
+			color: #f3efde;
+		}
+		@media screen and (max-height: 670px) {
+			position: absolute;
+			left: 15rem;
+			top: 120rem;
+			//   bottom: 5rem;
+			color: #f3efde;
+		}
+	}
+
+	&__page-video {
+		width: 100%;
+		z-index: -1000;
+
+		@media screen and (max-width: 500px) {
+			width: 500%;
+			position: absolute;
+		}
+	}
+}
+
+/* ---------------------------------- items --------------------------------- */
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.holder {
+	overflow: hidden;
+	position: relative;
+	height: 45rem;
+	width: 40rem;
+	display: inline-block;
+	margin: 5rem 7rem 7rem 5rem;
+}
+
+.bg-color {
+	background-color: #e5ddd6;
+	display: block;
+	height: 45rem;
+	width: 40rem;
+}
+
+.overlay {
+	position: absolute;
+	transition: all 0.5s ease;
+	opacity: 0;
+
+	&left {
+		height: 100%;
+		top: 0;
+		width: 0;
+		right: 0;
+	}
+}
+
+.holder:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition_img {
+	height: 45rem;
+	width: 40rem;
+}
+
+.overlayleft {
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 100;
+}
+
+.holder:hover .overlayleft {
+	width: 100%;
+}

@@ -72,7 +72,7 @@
     npmlog "^4.1.2"
     rimraf "^3.0.2"
     semver "^7.3.4"
-    tar "^6.1.2"
+    tar "^6.1.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -2272,7 +2272,7 @@ node-gyp@^7.1.0:
     request "^2.88.2"
     rimraf "^3.0.2"
     semver "^7.3.2"
-    tar "^6.1.2"
+    tar "^6.0.2"
     which "^2.0.2"
 
 node-sass@^6.0.1:
@@ -3176,7 +3176,7 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tar@^6.0.2, tar@^6.1.2:
+tar@^6.1.2:
   version "6.1.6"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.6.tgz#c23d797b0a1efe5d479b1490805c5443f3560c5d"
   integrity sha512-oaWyu5dQbHaYcyZCTfyPpC+VmI62/OM2RTUYavTk1MDr1cwW5Boi3baeYQKiZbY2uSQJGr+iMOzb/JFxLrft+g==

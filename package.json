@@ -35,7 +35,7 @@
 	"scripts": {
 		"start": "node server.js",
 		"dev": "nodemon server.js",
-		"scss": "node-sass --watch public/sass -o public/css --output-style compressed",
+		"scss": "node-sass --watch public/collections -o public/css/collections --output-style compressed",
 		"lint": "eslint --fix ./app.js ./server.js ./controllers/** ./models/** ./routes/** ./public/js/**"
 	},
 	"author": "Ayush Chugh, Arpit Chugh",

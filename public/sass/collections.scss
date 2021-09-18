@@ -19,17 +19,14 @@
 	top: 0;
 	filter: brightness(75%);
 
-	// @media screen and (max-width: 800px) {
-	// 	background-image: url(/images/Compressed/artisian_page/Artisan__link_image_croped.png);
-	// }
 }
 
 .hero {
 	height: 95vh;
 	&__main-heading {
 		position: absolute;
-		top: 40%;
-		left: 40%;
+		top: 44%;
+		left: 44%;
 		transform: translate(-50%, -50%);
 		text-transform: uppercase;
 
@@ -38,6 +35,11 @@
 		letter-spacing: 2.5rem;
 		margin-bottom: 2rem;
 		animation: moveInLeft 1s ease-out;
+    
+    @media screen and (max-width: 1366px) {
+			top: 35%;
+      left: 32%;
+		}
 	}
 
 	.hero__main-heading span {
@@ -53,6 +55,9 @@
 		width: 27%;
 		z-index: 1;
 		animation: moveInBottom 1s ease-in-out;
+    @media screen and (max-width: 1366px) {
+			top: 43%;
+		}
 	}
 
 	&__btn {
@@ -78,9 +83,11 @@
 	overflow: hidden;
 	padding: 5rem;
 	position: relative;
+  background: linear-gradient(100deg, #f3efdee5 0%,#e5ddd6 25%);;
+  
 
 	@media screen and (max-width: 1500px) {
-		color: #f3efde;
+		color: black;
 		display: block;
 		margin-top: -5rem;
 		height: 100vh;
@@ -106,9 +113,10 @@
 			left: 3rem;
 		}
 
-		@media screen and (max-width: 1000px) {
-			font-size: 7rem;
-			padding-top: 8rem;
+		@media screen and (max-width: 1366px) {
+			font-size: 5rem;
+      top: 0rem;
+			padding-top: 5rem;
 			padding-left: 10rem;
 		}
 
@@ -130,13 +138,12 @@
 		padding-left: 20rem;
 		width: 49rem;
 
-		@media screen and (max-width: 1500px) {
+		@media screen and (max-width: 1366px) {
 			position: absolute;
-			top: 30rem;
-			left: 3rem;
-			font-size: 3rem;
+			top: 11rem;
+			font-size: 1.5rem;
+      padding-left: 13rem;
 			text-decoration: underline 1px;
-			width: 70rem;
 		}
 
 		@media screen and (max-width: 1000px) {
@@ -159,11 +166,11 @@
 		width: 49rem;
 		margin-bottom: 9rem;
 
-		@media screen and (max-width: 1500px) {
-			top: 55rem;
-			left: 3rem;
-			font-size: 4rem;
-			width: 90rem;
+		@media screen and (max-width: 1366px) {
+			top: 15rem;
+			font-size: 2rem;
+      padding-left: 13rem;
+			width: 45rem;
 			position: absolute;
 		}
 
@@ -238,16 +245,33 @@
 
 	&__page-video {
 		width: 100%;
-		z-index: -1000;
 
 		@media screen and (max-width: 500px) {
 			width: 500%;
 			position: absolute;
 		}
+
+    @media screen and (max-width: 1366px) {
+			width: 50%;
+      top: 0rem;
+      left: 70rem;
+      position: absolute;
+		}
 	}
 }
 
 /* ---------------------------------- items --------------------------------- */
+
+.btn-secondary{
+  @media screen and (max-width: 1366px) {
+      bottom: 3rem;
+      left: 13rem;
+      font-size: 1.5rem;
+      padding: 2rem 5rem;
+      position: absolute;
+		}
+}
+
 .items {
 	display: flex;
 	flex-wrap: wrap;

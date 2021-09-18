@@ -20,7 +20,6 @@ exports.getCollection = async (req, res) => {
 
 	// get collection from db
 	const collection = await Collections.findOne({ title: title });
-	console.log(collection);
 
 	// render page
 	res.render('collections', {

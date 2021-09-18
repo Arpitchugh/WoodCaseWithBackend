@@ -38,6 +38,12 @@ exports.getCollection = async (req, res) => {
 // 	res.render('artisian');
 // };
 
-exports.getShop = (req, res) => {
-	res.render('shop');
+exports.getShop = async (req, res) => {
+	const type = await Type.find();
+	const collection = await Collections.find();
+
+	res.render('shop', {
+		types: type,
+		collections: collection,
+	});
 };

@@ -1,7 +1,9 @@
+// importing schema
 const Type = require('../models/newArrivals');
 const Collections = require('../models/collection');
 
 exports.getHome = async (req, res) => {
+	// content coming from schema
 	const type = await Type.find();
 	const collection = await Collections.find();
 

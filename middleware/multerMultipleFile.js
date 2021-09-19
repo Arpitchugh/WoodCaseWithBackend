@@ -24,4 +24,5 @@ const fileFilter = (req, file, cb) => {
 module.exports = multer({
 	storage: productStorage,
 	fileFilter: fileFilter,
+	// same as one used in input in addNewCollectionType.ejs
 }).any('image');

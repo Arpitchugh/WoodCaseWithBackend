@@ -61,14 +61,14 @@ exports.postDeleteType = async (req, res) => {
 		const type = await Collection.findOne({ _id: id });
 
 		// delete image of type
-		fs.unlink(`./${type.bgImage.path}`, err => {
+		fs.unlink(`./${type.bgImage.path}`, (err) => {
 			if (err) throw new Error(err);
 		});
 
 		// delete images of all products of type
-		type.products.forEach(product => {
-			product.images.forEach(image => {
-				fs.unlink(`./${image.path}`, err => {
+		type.products.forEach((product) => {
+			product.images.forEach((image) => {
+				fs.unlink(`./${image.path}`, (err) => {
 					if (err) throw new Error(err);
 				});
 			});
@@ -145,7 +145,7 @@ exports.getUpdateProduct = async (req, res) => {
 		// find product in database
 		const productType = await Collection.findOne({ title: type });
 		const product = await productType.products.find(
-			product => product._id.toString() === productId
+			(product) => product._id.toString() === productId
 		);
 
 		// render page
@@ -175,7 +175,7 @@ exports.postUpdateProduct = async (req, res) => {
 		// find product in database
 		const type = await Collection.findOne({ title: typeName });
 		const product = await type.products.find(
-			product => product._id.toString() === productId
+			(product) => product._id.toString() === productId
 		);
 
 		// update product
@@ -187,8 +187,8 @@ exports.postUpdateProduct = async (req, res) => {
 
 			if (images.length > 0) {
 				// delete existing image
-				product.images.forEach(image => {
-					fs.unlink(`./${image.path}`, err => {
+				product.images.forEach((image) => {
+					fs.unlink(`./${image.path}`, (err) => {
 						if (err) throw new Error(err);
 					});
 				});
@@ -221,12 +221,12 @@ exports.postDeleteProduct = async (req, res) => {
 
 		// find product in type
 		const product = type.products.find(
-			product => product._id.toString() == productId
+			(product) => product._id.toString() == productId
 		);
 
 		// delete images of product from file system
-		product.images.forEach(image => {
-			fs.unlink(`./${image.path}`, err => {
+		product.images.forEach((image) => {
+			fs.unlink(`./${image.path}`, (err) => {
 				if (err) throw new Error(err);
 			});
 		});

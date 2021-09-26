@@ -1,15 +1,3 @@
-// var lg = document.querySelector('.lg');
-
-// // length.addEventListener('', () => {
-// //   length.style.width =
-// // })
-// lg.addEventListener('mouseover', () => {
-//   var length = lg.getBoundingClientRect().width;
-//   const hi = `width: ${length}`
-//   console.log(length);
-
-// })
-
 const btn = document.querySelector('.btn-primary');
 
 btn.onmousemove = function (e) {
@@ -20,3 +8,15 @@ btn.onmousemove = function (e) {
 	btn.style.setProperty('--y', y + 'px');
 	// console.log(y);
 };
+
+
+const input = document.querySelector('#query');
+const searchIcon = document.querySelector('.hideButton');
+
+searchIcon.onmousemove = function () {
+  console.log(input.classList);
+  if (input.classList.display = 'none') {
+    input.classList.toggle('.block')
+  }
+
+}

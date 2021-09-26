@@ -38,7 +38,7 @@
 		"scss": "node-sass --watch public/collections -o public/css/collections --output-style compressed",
 		"lint": "eslint --fix ./app.js ./server.js ./controllers/** ./models/** ./routes/** ./public/js/**"
 	},
-	"author": "Ayush Chugh, Arpit Chugh",
+	"author": "Arpit Chugh",
 	"license": "ISC",
 	"engines": {
 		"node": ">=14.17.1"

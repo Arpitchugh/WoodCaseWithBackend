@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
-  @media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1024px) {
 		display: none;
 	}
 }
@@ -24,7 +24,7 @@ a {
 }
 
 .icons {
-  position: relative;
+	position: relative;
 }
 
 .search {
@@ -34,7 +34,6 @@ a {
 .cart {
 	width: 30px;
 }
-
 
 /* ------------------------- Animation for nav links ------------------------ */
 
@@ -52,14 +51,19 @@ a {
 }
 
 .hover::after {
-	content: "";
+	content: '';
 	position: absolute;
 	// display: block;
-	top: 72%; left: 18%; right: 0; bottom: 0;
+	top: 72%;
+	left: 18%;
+	right: 0;
+	bottom: 0;
 	height: 1px;
 	width: 65%;
 	background: $pr;
 	transition: transform 0.3s ease-in-out;
 }
 
-
+.block {
+	display: block;
+}

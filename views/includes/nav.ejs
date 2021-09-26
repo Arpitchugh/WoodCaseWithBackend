@@ -15,9 +15,20 @@
 	</div>
 	<div class="container">
 		<div class="icons">
-			<a href="/search"
-				><img class="search top" src="/images/icons/search.png" alt="cart"
-			/></a>
+			<!-- ------------------------------- search -------------------------------- -->
+			<form id="form" role="search">
+				<input
+					type="search"
+					id="query"
+					name="q"
+					placeholder="Input your search"
+					aria-label="Search through site content"
+					style="display: none"
+				/>
+				<a class="hideButton"
+					><img class="search top" src="/images/icons/search.png" alt="cart"
+				/></a>
+			</form>
 		</div>
 		<div class="icons">
 			<a href="/checkout"

@@ -263,8 +263,9 @@
 	font-size: 8rem;
 	font-weight: 400;
 	color: #fff;
-	top: 40%;
+	top: 35%;
 	@media screen and (max-width: 1366px) {
+        top: 40%;
         font-size: 6rem;
     }
 	@media screen and (max-width: 375px) {

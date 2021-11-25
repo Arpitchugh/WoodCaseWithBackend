@@ -161,9 +161,9 @@
 		margin-left: 5rem;
 		width: 30rem;
 		height: 18rem;
-        @media screen and (max-width: 1024px) {
+		@media screen and (max-width: 1024px) {
 			margin-top: 2rem;
-		margin-left: 2rem;
+			margin-left: 2rem;
 		}
 	}
 
@@ -232,6 +232,10 @@
 		padding: 5rem 15rem;
 		left: 35%;
 	}
+	@media screen and (max-width: 375px) {
+		padding: 5rem 15rem;
+		left: 40%;
+	}
 }
 .scribble-left {
 	position: absolute;
@@ -252,7 +256,7 @@
 	color: #fff;
 	top: 40%;
 	@media screen and (max-width: 375px) {
-		left: -100px;
+		left: -90px;
 		top: 0;
 	}
 }

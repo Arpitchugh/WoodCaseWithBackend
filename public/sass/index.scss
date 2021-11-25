@@ -60,12 +60,13 @@
 	padding: 2rem 6rem 5rem 25rem;
 
 	@media screen and (max-width: 1366px) {
-		height: 90vh;
+		height: 80vh;
 		padding: 2rem 5rem 5rem 15rem;
 	}
 
 	@media screen and (max-width: 375px) {
 		color: #fff;
+		height: 100vh;
 		padding: 10rem 5rem 5rem 6rem;
 	}
 
@@ -100,6 +101,7 @@
 
 		@media screen and (max-width: 375px) {
 			margin-bottom: 10rem;
+			line-height: 2.5rem;
 		}
 	}
 

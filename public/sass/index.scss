@@ -38,6 +38,9 @@
 .btn-hero-position {
 	top: -25vh;
 	left: 80%;
+	@media screen and (max-width: 1366px) {
+		left: 70%;
+	}
 }
 
 /* -------------------------------- artisian -------------------------------- */
@@ -46,12 +49,14 @@
 	justify-content: space-between;
 	border-bottom: solid #f3efde;
 	height: 90vh;
+
 	overflow: hidden;
 	position: relative;
 	padding: 2rem 6rem 5rem 25rem;
 
-	@media screen and (max-width: 1500px) {
-		height: 100vh;
+	@media screen and (max-width: 1366px) {
+		height: 80vh;
+		padding: 2rem 5rem 5rem 15rem;
 	}
 
 	@media screen and (max-width: 1200px) {
@@ -73,11 +78,6 @@
 		font-size: 5rem;
 		font-family: 'Open Sans';
 		margin: 0;
-		// padding-left: 20rem;
-
-		@media screen and (max-width: 1200px) {
-			padding-left: 15rem;
-		}
 
 		@media screen and (max-width: 1024px) {
 			font-size: 7rem;
@@ -283,6 +283,10 @@
 	top: 35%;
 	min-height: 50vh;
 	width: 50vh;
+	@media screen and (max-width: 1366px) {
+		padding: 5rem 15rem;
+		left: 35%;
+	}
 }
 .scribble-left {
 	position: absolute;
@@ -302,6 +306,9 @@
 	height: max-content;
 	width: fit-content;
 	left: 2vh;
+	@media screen and (max-width: 1366px) {
+		left: 25vh;
+	}
 }
 
 /* ---------------------------- shelfmate section --------------------------- */
@@ -314,16 +321,15 @@
 	overflow: hidden;
 	padding: 5rem 6rem 5rem 25rem;
 
-	@media screen and (max-width: 1000px) {
-		height: 100vh;
-		padding: 0rem;
+	@media screen and (max-width: 1366px) {
+		height: 90vh;
+		padding: 5rem 6rem 5rem 7rem;
 	}
 
 	&__heading {
 		font-size: 5rem;
 		font-family: 'Open Sans';
 		margin: 0;
-		
 
 		@media screen and (max-width: 1000px) {
 			font-size: 7rem;
@@ -345,7 +351,7 @@
 		font-size: 1.5rem;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
-		
+
 		width: 45rem;
 
 		@media screen and (max-width: 1500px) {
@@ -390,6 +396,9 @@
 
 	&__page-video {
 		padding: 2rem;
+		@media screen and (max-width: 1366px) {
+			width: 70vh;
+		}
 	}
 
 	&__btn {

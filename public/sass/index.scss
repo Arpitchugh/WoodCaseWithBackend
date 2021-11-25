@@ -216,12 +216,12 @@
 
 .caterpillar-button {
 	position: absolute;
-	left: 18rem;
+	left: 15rem;
 	top: 10rem;
 	z-index: 1;
 }
 .caterpillar__btn {
-	padding: 3rem 5rem;
+	padding: 3rem 4.5rem;
 }
 
 .caterpillar-container {
@@ -247,7 +247,7 @@
 		right: 0;
 	}
 	@media screen and (max-width: 375px) {
-		right: 45rem;
+		right: 35rem;
 		top: -10rem;
 	}
 }
@@ -270,7 +270,7 @@
 		left: 25vh;
 	}
 	@media screen and (max-width: 375px) {
-		left: -14rem;
+		left: -20rem;
 		top: -18rem;
 	}
 }

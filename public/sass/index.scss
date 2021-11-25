@@ -99,7 +99,10 @@
 		line-height: 3.5rem;
 		margin-bottom: 9rem;
 
-		@media screen and (max-width: 375px) {
+        @media screen and (max-width: 375px) {
+			line-height: 3rem;
+		}
+		@media screen and (max-width: 320px) {
 			margin-bottom: 5rem;
 			line-height: 2rem;
 		}
@@ -289,6 +292,10 @@
 		height: 90vh;
 		padding: 5rem 6rem 5rem 7rem;
 	}
+    @media screen and (max-width: 320px) {
+		height: 90vh;
+		padding-left: 2rem;
+	}
 
 	&__heading {
 		font-size: 5rem;
@@ -326,10 +333,11 @@
 			top: 35rem;
 			left: -6rem;
 			text-decoration: underline 1px;
-			width: 70rem;
+			width: 60ch;
 		}
 		@media screen and (max-width: 450px) {
 			font-size: 2.5rem !important;
+            width: 45ch;
 		}
 	}
 
@@ -343,17 +351,16 @@
 		@media screen and (max-width: 1000px) {
 			font-size: 4rem;
 			width: 90rem;
-			top: 55rem;
+			top: 55ch;
 			left: -6rem;
 		}
 
 		@media screen and (max-width: 450px) {
-			width: 70rem;
 			font-size: 2.8rem !important;
 		}
 
 		@media screen and (max-width: 400px) {
-			width: 70rem;
+            width: 40ch;
 			font-size: 3.4rem;
 		}
 	}

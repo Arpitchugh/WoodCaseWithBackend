@@ -19,6 +19,9 @@ html {
 	font-size: 62.5%;
 	font-family: 'Open Sans';
 	// background-color: var(--bg);
+    @media screen and (max-width: 375px) {
+		font-size: 40%;
+	}
 }
 
 body {

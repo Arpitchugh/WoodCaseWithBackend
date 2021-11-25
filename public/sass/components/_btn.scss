@@ -26,8 +26,8 @@
 	font-family: 'Open Sans', 'Helvetica Neue';
 	overflow: hidden;
 
-	@media screen and (max-width: 1024px) {
-		font-size: 5rem !important;
+    @media screen and (max-width: 375px) {
+		font-size: 2rem !important;
 	}
 
 	& span {

@@ -15,8 +15,9 @@ const searchIcon = document.querySelector('.hideButton');
 
 searchIcon.onmousemove = function () {
   console.log(input.classList);
-  if (input.classList.display = 'none') {
-    input.classList.toggle('.block')
+  if (input.style.display = 'none') {
+    input.style.display = 'block'
   }
+  else{input.style.display = 'none';}
 
 }

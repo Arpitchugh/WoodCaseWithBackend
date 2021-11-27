@@ -17,8 +17,8 @@
 		width: 6rem;
 		border-radius: 50%;
 		position: fixed;
-		top: 7rem;
-		right: 10rem;
+		top: 5rem;
+		right: 6rem;
 		z-index: 2000;
 		box-shadow: 0 1rem 3rem rgba(#000, 0.2);
 		text-align: center;
@@ -30,8 +30,8 @@
 		width: 4rem;
 		border-radius: 50%;
 		position: fixed;
-		top: 7.5rem;
-		right: 10rem;
+		top: 5.5rem;
+		right: 7.5rem;
 		background-image: radial-gradient(#8d6b519d, #7c451be1);
 		z-index: 1000;
 		transition: transform 0.8s;
@@ -79,6 +79,9 @@
 			);
 			background-size: 250%;
 			transition: all 0.4s;
+            @media screen and (max-width: 500px) {
+                font-size: 5rem;
+            }
 		}
 
 		&:hover,

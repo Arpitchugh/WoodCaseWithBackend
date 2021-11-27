@@ -11,65 +11,6 @@
 	background-color: #806858;
 }
 
-/* ------------------------------- HeroSection ------------------------------ */
-.bgimg {
-	// background-image: url("..//images/Compressed/Products/background.jpg");
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	// height: 100vh;
-	padding-top: 4rem;
-
-	@media screen and (max-width: 800px) {
-		// background-image: url(..//images/Compressed/Products/background.jpg);
-	}
-}
-
-.nav {
-	background-color: #8d6b51b9;
-}
-
-.hero {
-	&__main-heading {
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-transform: uppercase;
-		font-family: sans-serif;
-		font-size: 10rem !important;
-		padding-bottom: 0rem;
-		padding-bottom: 0rem;
-	}
-
-	.hero__main-heading span {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	&__scribble {
-		position: absolute;
-		top: 45%;
-		left: 26%;
-		width: 50%;
-		z-index: 0;
-	}
-
-	&__btn {
-		position: absolute;
-		right: 10rem;
-		bottom: 15rem;
-		z-index: 1;
-
-		@media screen and (max-width: 400px) {
-			position: absolute;
-			left: 20rem;
-			bottom: 35rem;
-		}
-	}
-}
-
 /* -------------------------------- shop ------------------------------- */
 
 .column {
@@ -79,6 +20,9 @@
 	width: 30rem;
 	height: 30rem;
 	object-fit: contain;
+    @media screen and (max-width: 375px) {
+        height: 100%;
+    }
 }
 
 /* Clear floats after image containers */
@@ -90,12 +34,15 @@
 
 .text {
 	position: relative;
-	// text-align: center;
-	text-decoration: 0.3rem underline;
+    text-decoration: 0.3rem underline;
 	padding-top: 3rem;
 	padding-left: 4rem;
 	text-transform: uppercase;
-	font-size: 3.5rem !important;
+	font-size: 3.5rem;
+
+    @media screen and (max-width: 375px) {
+        font-size: 5rem;
+    }
 }
 
 figcaption {
@@ -104,6 +51,9 @@ figcaption {
 	font-size: 1.8rem;
 	padding: 2px;
 	text-align: center;
+     @media screen and (max-width: 375px) {
+        font-size: 3rem;
+    }
 }
 
 figure {

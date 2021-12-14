@@ -9,4 +9,5 @@ router.get('/collections/:title', homeController.getCollection);
 // router.get('/artisian', homeController.getArtisian);
 router.get('/shop', homeController.getShop);
 
+router.get('/buy', homeController.getBuy);
 module.exports = router;

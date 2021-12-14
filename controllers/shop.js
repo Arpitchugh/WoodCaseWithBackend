@@ -48,3 +48,7 @@ exports.getShop = async (req, res) => {
 		collections: collection,
 	});
 };
+
+exports.getBuy = async (req, res) => {
+    res.render('bed1')
+}
